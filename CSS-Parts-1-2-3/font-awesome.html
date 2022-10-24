@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+
+    <style>
+
+        *{
+            margin:0;
+            box-sizing:border-box;
+        }
+
+        #showcase
+        {
+            background-image: url('home-bg.jpeg');
+            background-position:center;
+            padding:50px;
+            height:500px;
+            width:100%;
+            padding:10px;
+        }
+
+        h1
+        {
+            padding:20px;
+            /*border-left:5px outset white;*/
+            border-radius:3px;
+        }
+
+
+        #how-it-works
+        {
+            background-color:#DADDFC;
+            height:300px;
+            text-align:center;
+            padding:15px;
+            
+        }
+
+        nav
+        {
+            background-color:#DADDFC;
+            padding:8px;
+            width:calc(100% - 150px);
+            text-align:right;
+        }
+
+        a{
+            color:black; 
+            font-style: italic;
+            padding:10px; /*Padding determines the width of every element. */
+            text-decoration:none;
+        }
+
+
+        .main-header
+        {
+            background-color:#DADDFC;
+            padding:8px 16px;
+        } 
+
+    .main-nav{
+        display:inline-block;
+    }
+
+    ul{
+        margin:0;
+        list-style:none;
+        padding:0;
+    }
+
+    .main-nav__item{
+        display:inline-block;
+        margin:0px 10px;
+    }
+
+    .main-header__logo{
+        font-weight:bold;
+        font-size:21px;
+    }
+
+    .main-nav__item a:hover{
+        color:darkblue;
+    }
+
+    .main-nav__item a:active{
+        color:red;
+    }
+
+    .main-nav__item::before{
+        content:'\2022';
+    }
+
+    .main-nav__item:hover::before{
+        color:darkblue;
+    }
+
+    .main-nav-item__login a{
+        color:black;
+        background-color:#396EB0;
+        padding:4px 16px;
+        border-radius:8px;
+    }
+
+    .main-nav-item__login::before{
+        content:none;
+    }
+
+    .main-nav-item__login a:hover{
+        color:blueviolet;
+        background-color:#fff;
+        border:2px solid orange;
+    }
+
+    .row{
+        margin:40px;
+    }
+
+    .col{
+        display:inline-block;
+        width:30%;
+        padding:16px;
+        margin:8px;
+    }
+
+
+    #how-it-works h2{
+        font-size:30px;
+        font-weight:600;
+    }
+
+
+    .icon-box h3{
+        font-size:26px;
+    }
+
+    .icon-box i{
+        color:#FC997C;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="main-header" style="background-color:#DADDFC;">
+        <a href="#" class="main-header__logo">MovieApp</a>
+
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Movies</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="main-nav__item main-nav-item__login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+    
+    <main>
+        <section id="showcase">
+            <h1 style="text-align:center;">Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <div>
+                <h2>How it works ?</h2>
+                <p>We will show you step by step how to start watching your favorite movies & TV shows starting now!</p>
+            </div>
+
+            <div class="row">
+                <div class="icon-box col">
+                    <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+                    <h3>Register</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis, ut repellendus maiores vel nam!</p>
+                </div>
+                <div class="icon-box col">
+                    <i class="fa-brands fa-buffer fa-3x"></i>                    <h3>Choose a Plan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis, ut repellendus maiores vel nam!</p>
+                </div>
+                <div class="icon-box col">
+                    <i class="fa-regular fa-face-smile fa-3x"></i>                    <h3>Enjoy Movies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis, ut repellendus maiores vel nam!</p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin:0;
+        }
+
+        .container{
+            background-color:#034f84;
+            height: 500px;            
+            display:flex;
+
+            flex-wrap:wrap;
+            align-content:center;
+            /* align-items:center; */
+            /* align-content:center; elemanların hepsi kendi bulunduğu satır değil genel yükseklik içinde ortaya yerleşir. */
+            /* align-content:flex-start; /* yukarıda sıralanır */
+            /* align-content:flex-end; aşağıda sıralanır */ 
+
+            /* align-content:space-around; */
+            /* align-content:space-between; */
+            
+            gap:30px;
+
+            /*
+            row-gap:20px;
+            column-gap:20px; */
+
+        }
+
+        .item{
+            background-color:#f7786b;
+            padding:30px;
+            color:#fff;
+            font-size:25px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item item-1">item1</div>
+        <div class="item item-2">item2</div>
+        <div class="item item-3">item3</div>
+        <div class="item item-4">item4</div>
+        <div class="item item-5">item5</div>
+        <div class="item item-6">item6</div>
+        <div class="item item-7">item7</div>
+        <div class="item item-8">item8</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin:0;
+        }
+
+        .container{
+            background-color:#034f84;
+            height: 500px;            
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .item{
+            background-color:#f7786b;
+            padding:30px;
+            color:#fff;
+            font-size:25px;
+            margin:20px;
+            /* flex-grow:1; tüm elemanlar eşit yer kaplar ve containeri doldurur eğer sadece bir eleman flex-grow:1 özelliğini alırsa
+            diğerleri normal yerleri kadar kaplarken flex-grow:1 özelliğini alan eleman kalan boşluğu kaplar. */
+            
+        }
+
+        /* flex: 0 1 200px; denildiğinde, birinci index grow'u, ikinci index shrink'i ve üçüncü index büyüklüğü temsil eder örneğin soldaki gibi
+        bir flex değerine bakıldığında büyüme kapalı, yeterli alan olmadığında küçülür ve büyüklük yeterli alan olduğunda 200px olur.*/
+
+
+        .item-1{
+           /* flex-grow:2; */
+           flex:25%;
+           order:3;
+        }
+
+        .item-2{
+           /* flex-grow:1; */
+           flex:25%;
+           order:2;
+        }
+
+        
+        .item-3{
+           /* flex-basis:200px; */
+           /* flex-shrink:0;  bu özellik sayesinde item-3 yer kalmasa bile 200px altına düşmez */
+            flex:50%;
+            order:1;
+        }
+
+        
+
+        /* item-basis:200px denildiğinde o özelliğin verildiği item yer olduğu sürece 200 px kaplar ne zaman ki sayfa çok daralır o zaman
+        diğer itemler ile aynı miktarda yer kaplar */
+
+        /* eğer item-1 flex-grow:2 alırsa ve item-2 flex-grow 1 alırsa item 3 ve 4 ten kalan container içindeki alanı item-1 2 oranında item 2 
+        ise 1 oranında paylaşır  */
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item item-1">item1</div>
+        <div class="item item-2">item2</div>
+        <div class="item item-3">item3</div>
+    </div>
+
+
+</body>
+</html>

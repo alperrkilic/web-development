@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width:150px;
+            height:150px;
+            background-color:brown;
+            float:right;
+        }
+
+        #box1{
+            float:left;
+        }
+
+
+        #container{
+            background-color:chocolate;
+        }
+
+        .clearfix::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    
+    <div id="container" class="clearfix">
+        <div class="box" id="box1">kutu1</div>
+        <div class="box">kutu2</div>
+        <div class="box">kutu3</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis veniam labore, repellendus porro hic ab facere excepturi sunt, iste nisi pariatur est dolor non voluptates illum ut. Iure, amet corporis.</p>
+
+
+</body>
+</html>

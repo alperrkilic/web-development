@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin:0;
+        }
+
+
+        .container{
+            background-color:#034f84;
+            height:50rem;            
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+
+            /* Eğer item alignment yapılmazsa stretch olur ve container kadar yer kaplar dikeyde kötü bir görüntü oluşur. */
+
+            /* justify-content:center; container'i ortalar product tanıtırken vs kullanılabilir*/
+
+            /* justify-content:flex-start;
+            justify-content:flex-end;  navbar yaparken kullanılabilir*/
+
+            /* justify-content:space-around;  ilk boşluklarda x diğerlerinde 2x*/
+
+            /* justify-content:space-between; baştan ve sondan boşluk bırakılmaz itemler arası eşit mesafede boşluk bırakılır */
+
+            /* align-items:flex-start; bütün elemanlar içerik kadar yer kaplar üst taraftan*/
+
+            /* align-items:flex-end; */
+
+            /* Tam ortaya almak istediğimizde;
+            align-items:center;
+            justify-content:center; 
+            */
+
+        }
+
+        .item{
+            background-color:#f7786b;
+            padding:30px;
+            color:#fff;
+            font-size:25px;
+            margin:10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+
+
+</body>
+</html>
